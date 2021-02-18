@@ -1,3 +1,8 @@
+html, * {
+    margin: 0;
+    /* padding: 0; */
+    scroll-behavior: smooth;
+}
 body {
     background-color: #313131;
 }
@@ -9,14 +14,20 @@ h1, h2, h3, p {
     color: #0DD251;
     font-weight: 700;
     font-size: 20px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
 }
 .heroImg h1 {
     font-weight: 400;
     font-size: 40px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
 }
 .heroImg p {
     font-weight: 600;
     font-size: 20px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 .heroImg h1, h2, p {
     line-height: 27px;
@@ -32,8 +43,11 @@ h1, h2, h3, p {
     text-align: center;
     background-image: url("../images/bg_curves.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+    /* max-width: 100%;
+    height: auto; */
+    background-color: #313131;
 }
 @keyframes bounce {
     0%, 20%, 60%, 100% {
@@ -86,7 +100,29 @@ h1, h2, h3, p {
     "img2 line2"
     ;
 } */
-
+.updatedFeature {
+    text-align: center;
+    background-color: #5E5E5E;
+    padding: 30px 5%;
+}
+.updatedFeature h2 {
+    color: #0DD251;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 55px;
+}
+.state h1 {
+    color: #0DD251;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+    padding-left: 27px;
+}
+.state {
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 /*Feature Grid*/
 .organize img, .personalize img, .optimize img {
     align-self: flex-start;
@@ -119,3 +155,28 @@ h1, h2, h3, p {
     "organize personalize optimize"
     ;
 }
+.cta h1 {
+    color: #0DD251;
+    font-weight: 800;
+    font-size: 138.462px;
+    line-height: 169px;
+}
+.cta {
+    text-align: center;
+    background-image: url(../images/bg_curves3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #313131;
+    padding-bottom: 100px;
+}
+.btnPrimary {
+    padding: 20px;
+    background-color: #0DD251;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 100px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+  }
